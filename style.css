@@ -1,105 +1,123 @@
-/* ================================
-   Global Reset & Base Styling
+/* ===============================
+   Base Reset
 ================================ */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* ===============================
+   Body & Layout
+================================ */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f9fafb;
-    color: #222;
-    line-height: 1.7;
-    padding: 30px 20px;
-    max-width: 1100px;
-    margin: auto;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f6f8;
+  color: #1f2933;
+  line-height: 1.8;
+  padding: 40px 20px;
 }
 
-/* ================================
+main {
+  max-width: 920px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* ===============================
    Headings
 ================================ */
 h1 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    color: #111;
-    border-bottom: 3px solid #e5e7eb;
-    padding-bottom: 10px;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  color: #0f172a;
+  line-height: 1.3;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-top: 40px;
-    margin-bottom: 15px;
-    color: #1f2937;
+  font-size: 1.55rem;
+  margin-top: 45px;
+  margin-bottom: 18px;
+  color: #1e293b;
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
 }
 
-/* ================================
-   Paragraphs & Text
+/* ===============================
+   Text Content
 ================================ */
 p {
-    margin-bottom: 18px;
-    font-size: 1rem;
-    color: #333;
+  margin-bottom: 18px;
+  font-size: 1.02rem;
+  color: #374151;
 }
 
-/* ================================
+/* ===============================
    Links
 ================================ */
 a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* ================================
-   Section Spacing
+/* ===============================
+   Info Sections (Restaurant Blocks)
 ================================ */
-section {
-    margin-bottom: 40px;
+.restaurant-block {
+  background: #f9fafb;
+  padding: 25px;
+  border-radius: 8px;
+  margin-top: 25px;
+  border: 1px solid #e5e7eb;
 }
 
-/* ================================
-   Content Cards (Optional Look)
+.restaurant-block a {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* ===============================
+   Divider
 ================================ */
-.content-box {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin-bottom: 30px;
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 50px 0;
 }
 
-/* ================================
-   Footer (Optional)
+/* ===============================
+   Footer
 ================================ */
 footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #e5e7eb;
-    font-size: 0.9rem;
-    color: #555;
-    text-align: center;
+  margin-top: 60px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
 }
 
-/* ================================
-   Responsive Design
+/* ===============================
+   Responsive
 ================================ */
 @media (max-width: 768px) {
-    body {
-        padding: 20px 15px;
-    }
+  main {
+    padding: 30px 22px;
+  }
 
-    h1 {
-        font-size: 1.8rem;
-    }
+  h1 {
+    font-size: 1.9rem;
+  }
 
-    h2 {
-        font-size: 1.3rem;
-    }
+  h2 {
+    font-size: 1.35rem;
+  }
 }
